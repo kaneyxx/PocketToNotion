@@ -27,5 +27,6 @@ Command:
 python main.py [--step 1-3]
 ```
 step 1: Being authorized  
-step 2: Get the access token  
+step 2: Get the access token
+(step1 & 2 only need to run once)
 step 3: Archived pocket items and dump into Notion
