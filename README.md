@@ -14,7 +14,7 @@ Prepare your configuration.json file as below:
 }
 ```
 - Pocket
-> 1. Go to https://getpocket.com/developer/apps/new create your app (Remember all permissions!)
+> 1. Go to https://getpocket.com/developer/apps/new create your app (Remember checking all permissions!)
 > 2. Get the consumer key, and decide your redirect_uri 
 
 - Notion
