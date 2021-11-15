@@ -19,7 +19,8 @@ Prepare your configuration.json file as below:
 
 - Notion
 > 1. Go to https://www.notion.so/my-integrations and get your Internal Integration Token
-> 2. copy Notion database link to browser and get the ID, e.g. https://www.notion.so/workspace/[DATABASEID]?v=12345678 , the database ID is 32 characters
+> 2. Click the share button on database, then invite the integration you just created
+> 3. copy Notion database link to browser and get the ID, e.g. https://www.notion.so/workspace/[DATABASEID]?v=12345678 , the database ID is 32 characters
 
 Command:
 ```python
