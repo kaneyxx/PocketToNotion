@@ -49,6 +49,8 @@ def delete_item(consumer_key, access_token, item_id):
 ##############################
 
 ########### Notion function###########
+# For custom page, please visit: https://developers.notion.com/reference/page#property-value-object for details
+
 def createPage(dbID, headers, title_, url_, ts_):
     pageUrl = "https://api.notion.com/v1/pages"
     pageData = {
