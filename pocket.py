@@ -45,7 +45,8 @@ class pocket_requirements():
         data = res.json()
         accessToken = data["access_token"]
         # userName = data["username"]
-        print("access token: ", accessToken)
+        # print("access token: ", accessToken)
+        print("Access token is coverted successfully!")
 
         return accessToken
 

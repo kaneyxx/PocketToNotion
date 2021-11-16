@@ -116,7 +116,7 @@ def main():
             json.dump(data, f, ensure_ascii=False)
 
     if args.step == 3:
-        print("Getting pocket item list....")
+        print("Retrieving pocket item list....")
         with open("./configuration.json") as f:
             data = json.load(f)
         pocket = pocket_fns(data["pocket"]["consumer_key"], data["pocket"]["access_token"])
