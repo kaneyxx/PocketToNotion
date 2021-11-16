@@ -20,7 +20,7 @@ Prepare your configuration.json file as below:
 - Notion
 > 1. Go to https://www.notion.so/my-integrations and get your Internal Integration Token
 > 2. Click the share button on database, then invite the integration you just created
-> 3. copy Notion database link to browser and get the ID, e.g. https://www.notion.so/workspace/[DATABASEID]?v=12345678 , the database ID is 32 characters
+> 3. Copy Notion database link to browser and get the ID, e.g. https://www.notion.so/workspace/[DATABASEID]?v=12345678 , the database ID is 32 characters
 
 * Notion table columns (notion data type):  
   "Title" (title)  
@@ -34,7 +34,7 @@ Command:
 ```python
 python main.py [--step 1-3]
 ```
-step 1: Being authorized  
+step 1: Being authorized  (You will need to login Pocket to finish this step)
 step 2: Get the access token
 (step1 & 2 only need to run once)  
 step 3: Archived pocket items and dump into Notion

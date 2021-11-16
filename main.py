@@ -2,6 +2,7 @@ import requests, json
 import datetime
 import argparse
 from pocket import pocket_requirements, pocket_fns
+from notion import createPage
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--step', type=int, required=True, help='1-3')
@@ -46,51 +47,7 @@ def delete_item(consumer_key, access_token, item_id):
     # print(action.headers.get('X-Error'))
     print("Archived pocket item!")
 
-##############################
-
-########### Notion function###########
-# For custom page, please visit: https://developers.notion.com/reference/page#property-value-object for details
-
-def createPage(dbID, headers, title_, url_, ts_):
-    pageUrl = "https://api.notion.com/v1/pages"
-    pageData = {
-        "parent": {"database_id": dbID},
-        "properties": {
-            "Title": {
-                "title": [
-                    {"text": {
-                        "content": title_
-                        }
-                    }
-                ]
-            },
-            "URL": {
-                "url": url_
-            },
-            "Time": {
-                "date": {
-                "start": ts_
-                }
-            },
-            "Read": {
-                "checkbox": False
-            },
-            "Note": {
-                "rich_text": [
-                    {
-                        "text": {
-                            "content": ""
-                        }
-                    }
-                ]
-            }
-        }
-    }
-    
-    newPage = json.dumps(pageData)
-    res = requests.request("POST", pageUrl, headers=headers, data=newPage)
-    print("Created new page in Notion!")
-
+#############################################
 
 def main():
     args = parser.parse_args()
