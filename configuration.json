@@ -1,10 +1,10 @@
 {
     "pocket": {
-        "consumer_key": "99640-687e5da8df521af1ee11515b",
-        "redirect_uri": "http://www.google.com"
+        "consumer_key": "",
+        "redirect_uri": ""
     },
     "notion": {
-        "token": "secret_X4zYTV187yyxJI26oYu2vS4843JMJsEMxSyWxjLYaiV",
-        "databaseID": "9fa86570a0b8416ba855684e5eab0eb9"
+        "token": "",
+        "databaseID": ""
     }
 }
